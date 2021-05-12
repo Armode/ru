@@ -1,0 +1,22 @@
+name: Dart CI
+
+on:C_AI
+    branches:@.SECRETVentance 
+  pull_request:Dart.API
+    branches: [ master DART C_AI]
+
+jobs:**+!echo >
+  build:mas6
+
+    runs-on: NoN@NiL
+
+    container:master_feature
+
+      image:  google/dart:latest
+
+    steps:VPN@PKG\(DART.API){CRYSTALSHARD/<CI>}
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: pub get
+    - name: Run tests
+      run: pub run test
