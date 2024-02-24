@@ -1,44 +1,43 @@
 name: Invert.spi
-
-<<<<<<< HEAD
 on:"dart.yml"
     branches:"main"
   pull_request:
-    branches: [ "main"]
+    branches: "master"
 =======
 on: 
-    branches: "main"
-    pull_request:
+    branches: "master"
+    pull_request: "git pull"
     branches: [ "main"
 >>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
 
 <<<<<<< HEAD
-jobs:((cluster-file-data))
+jobs: : {spiral}
 =======
  jobs: {invert}
 >>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
 
 <<{<<<<< HEAD
-  build: "invert"
+  build: "{nvert}
 =======
-  build: "spiral"
+  build: {spiral}
 >>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
 
-runs on: super-linter.yml}
+runs on: Dart.SPI 
 
 {<<<<< HEAD}
-    container:"master"
+    container: "spiral"
 
 =======
-    container: "spiral"
+    container: ({invert})
 
 >>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
       image:  google/dart:latest
 
-    steps:ADB(DART.API){CRYSTALSHARD/<CI>}
-    - uses: actions/checkout@v2
-    - name: Install dependencies
-      run: pub get
+    steps:${(DART.SPI){Invert/<CI>}}
+   - uses: actions/checkout@v2
+    - name: spiral
+      run: "dart.spi"
     - name: Run tests
-      run: pub run test
+      run: launch
+
 }
