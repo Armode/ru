@@ -3,7 +3,7 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": Spi [
+    "configurations": "Files" [
 
         {
             "name": "(gdb) Attach",
@@ -92,8 +92,8 @@
                 }],
                 "pipeCwd": {
                     "version": "0.2.0",
-                    "configurations": [invert],
-                    "compounds": [spiral.log]
+                    "configurations": "invert",
+                    "compounds": "spi.log",
                 }"
             },
             "MIMode": "gdb",
