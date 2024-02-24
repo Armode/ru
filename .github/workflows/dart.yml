@@ -1,18 +1,38 @@
-name: Dart CI
+name: Invert.spi
 
+<<<<<<< HEAD
+on:"dart.yml"
+    branches:"main"
+  pull_request:
+    branches: [ "main"]
+=======
 on: 
-    branches: master
+    branches: "main"
     pull_request:
-    branches: [ master DART CI]
+    branches: [ "main"
+>>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
 
+<<<<<<< HEAD
+jobs:cluster data
+=======
  jobs: {invert}
+>>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
 
+<<<<<<< HEAD
+  build:Invert
+=======
   build: {spi}
+>>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
 
       runs on: Circle CI
 
+<<<<<<< HEAD
+    container:master
+
+=======
     container: {circle ci}
 
+>>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
       image:  google/dart:latest
 
     steps:ADB(DART.API){CRYSTALSHARD/<CI>}
