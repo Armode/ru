@@ -6,38 +6,38 @@ on:"dart.yml"
 =======
 on: 
     branches: "master"
-    pull_request: "git pull"
-    branches: [ "main"
+    pull_request: 
+    branches: "main"
 >>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
 
 <<<<<<< HEAD
-jobs: : {spiral}
+jobs: : "spiral"
 =======
- jobs: {invert}
+ jobs: "invert"
 >>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
 
 <<{<<<<< HEAD
-  build: "{nvert}
+  build: "Dart.api"
 =======
-  build: {spiral}
+  build: "invert.api"
 >>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
 
-runs on: Dart.SPI 
+runs on: Dart.api
 
 {<<<<< HEAD}
     container: "spiral"
 
 =======
-    container: ({invert})
+    container: "invert"
 
 >>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
       image:  google/dart:latest
 
-    steps:${(DART.SPI){Invert/<CI>}}
+    steps:${(DART.api){Invert/<Dart>}}
    - uses: actions/checkout@v2
     - name: spiral
-      run: "dart.spi"
+      run: "dart.api"
     - name: Run tests
-      run: launch
+      run: pub test get
 
 }
