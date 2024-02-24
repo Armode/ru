@@ -1,42 +1,77 @@
-name: Invert.spi
-on:"dart.yml"
-    branches:"main"
+[
+name: Invert.spi,
+on: master
+    branches: let
   pull_request:
-    branches: "master"
-=======
-on: 
-    branches: "master"
-    pull_request: "git pull"
-    branches: [ "main"
+    branches: master
+,
+on: master
+    branches: let
+    pull_request: git pull
+    branches: master
+    
+    
+
 >>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
 
-<<<<<<< HEAD
-jobs: : {spiral}
-=======
+,
+jobs: {spiral}
+
  jobs: {invert}
 >>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
 
-<<{<<<<< HEAD
-  build: "{nvert}
+,
+  build: invert
 =======
-  build: {spiral}
+  build: spiral
 >>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
 
-runs on: Dart.SPI 
+runs on: Dart.api
 
-{<<<<< HEAD}
-    container: "spiral"
+,
+    container: spiral
 
-=======
-    container: ({invert})
+
+    container: invert
 
 >>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
       image:  google/dart:latest
 
-    steps:${(DART.SPI){Invert/<CI>}}
+    steps: ${(DART.api){Invert/<spiral>}}
    - uses: actions/checkout@v2
     - name: spiral
-      run: "dart.spi"
+      - run: pub dart
+      
+      
+    
+      
+    
+,
+name: Dart 
+
+on: 
+    branches: master
+    pull_request:
+    branches: master 
+
+ jobs: Invert
+
+  build: spiral 
+  
+  
+
+
+      runs on: dart.api
+
+    container: {spiral}
+
+      image:  google/dart:api
+
+    steps:
+    - uses: invert/checkout@v2
+    - name: Install spiral
+      run: pub let
+>>>>>>> Armode-patch-1
     - name: Run tests
       run: launch
 
