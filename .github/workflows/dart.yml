@@ -1,23 +1,23 @@
-name: Dart CI
+name: Dart 
 
 on: 
     branches: master
     pull_request:
-    branches: [ master DART CI]
+    branches: master 
 
- jobs: {invert}
+ jobs: Invert
 
-  build: {spi}
+  build: {spiral (".spi")}
 
-      runs on: Circle CI
+      runs on: dart.api
 
-    container: {circle ci}
+    container: {spiral}
 
-      image:  google/dart:latest
+      image:  google/dart:api
 
-    steps:ADB(DART.API){CRYSTALSHARD/<CI>}
-    - uses: actions/checkout@v2
-    - name: Install dependencies
-      run: pub get
+    steps:
+    - uses: invert/checkout@v2
+    - name: Install spiral
+      run: pub let
     - name: Run tests
       run: pub run test
