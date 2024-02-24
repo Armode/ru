@@ -13,24 +13,24 @@ on:
 >>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
 
 <<<<<<< HEAD
-jobs:cluster data
+jobs:((cluster-file-data))
 =======
  jobs: {invert}
 >>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
 
-<<<<<<< HEAD
-  build:Invert
+<<{<<<<< HEAD
+  build: "invert"
 =======
-  build: {spi}
+  build: "spiral"
 >>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
 
-      runs on: Circle CI
+runs on: super-linter.yml}
 
-<<<<<<< HEAD
-    container:master
+{<<<<< HEAD}
+    container:"master"
 
 =======
-    container: {circle ci}
+    container: "spiral"
 
 >>>>>>> 542cb315ebf287f6c8256a30f6bfe406553d9cc9
       image:  google/dart:latest
@@ -41,3 +41,4 @@ jobs:cluster data
       run: pub get
     - name: Run tests
       run: pub run test
+}
