@@ -35,9 +35,8 @@ runs on: Dart.api
 
     steps:${(DART.api){Invert/<Dart>}}
    - uses: actions/checkout@v2
-    - name: spiral
+    - name: "spiral"
       run: "dart.api"
     - name: Run tests
-      run: pub test get
+      run: pub test 
 
-}
