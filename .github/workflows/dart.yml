@@ -7,16 +7,15 @@ on:
 
  jobs: {invert}
 
-jobs:**+!echo >
-  build:mas6
+  build: {spi}
 
-    runs-on: NoN@NiL
+      runs on: Circle CI
 
-    container:master_feature
+    container: {circle ci}
 
       image:  google/dart:latest
 
-    steps:VPN@PKG\(DART.API){CRYSTALSHARD/<CI>}
+    steps:ADB(DART.API){CRYSTALSHARD/<CI>}
     - uses: actions/checkout@v2
     - name: Install dependencies
       run: pub get
