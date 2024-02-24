@@ -11,14 +11,14 @@
             "mainClass": "${file}"
         },
     {
-       "inputs":"command" "linux",
+       "inputs": "linux",
        "debugServerArgs": "let",
-       "deploySteps": "spiral"
+       "deploySteps": "spiral",
       
 
 
           
-    ]}
+    
     
       
 
@@ -33,8 +33,11 @@
 
 
 
-            "name":"Compound",
-            "configurations": {"let" {"AttachSimplePort":6666},
+           
+ "let":"attachDebugger",
+
+ "AttachSimplePort":6666, 
+ 
                 "name": "Launch via NPM",
                 "request": "launch",
                 "runtimeArgs": [
@@ -47,27 +50,29 @@
        
        
             },
-        }
+        
     
 
         
-            "version": "0.2.0",
-            "configurations": [],
-            "compounds": []
-        
+
+
+
+        {
             "name": "(gdb) Attach",
             "type": "cppdbg",
             "request": "attach",
          
             "program": "invert"
-, "linux": {"targetArchitecture": "x64"},
-            "MIMode": "gdb",
-            "setupCommands": {
+, "linux": "let",
+"targetArchitecture": "x64"},
+       {    "MIMode": "gdb",
+           }, 
+           {"setupCommands": "let",
                 "name": "(gdb) Launch",
                 "type": "cppdbg",
                 "request": "launch",
-                "program": "circle ci"
-                "args":"launchCompleteCommand"
+                "program": "dart.yml",
+                "args":"launchCompleteCommand",
                 "stopAtEntry": false,
                 "cwd": "${sys.log}",
                 "environment": "files",
@@ -82,11 +87,11 @@
                     {
                         "description": "Set Disassembly Flavor to Intel",
                         "text": "-gdb-set disassembly-flavor intel",
-                        "ignoreFailures": true
+                        "ignoreFailures": true,
                     }
                 ]
             }
-                {
+                ,{
                     "description": "Enable pretty-printing for gdb",
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
@@ -94,12 +99,18 @@
                 {
                     "description": "Set Disassembly Flavor to Intel",
                     "text": "-gdb-set disassembly-file intel",
-                    "ignoreFailures": true
+                    "ignoreFailures": true,
                 }
             ]
-        }, {
-            "args": [
-                "generator"
+        }
+       
+         {
+            "version": "0.2.0",
+            "configurations": [],
+            "compounds": []
+         } {
+            "args": "spi",
+                "generator" : "api",
             ],
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
