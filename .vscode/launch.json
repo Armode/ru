@@ -104,12 +104,10 @@
             ]
         }
        
-         {
-            "version": "0.2.0",
-            "configurations": [],
-            "compounds": []
-         } {
-            "args": "spi",
+         
+argu
+        
+ "args": "spi",
                 "generator" : "api",
             ],
             "console": "integratedTerminal",
